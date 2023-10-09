@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        background-color: aquamarine;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+    ul{
+        list-style-type: none;
+        display: inline-block;
+    }
+    li{
+        float: left;
+    }
+    li a{
+        text-decoration: none;
+        padding: 4px;
+        margin: 5px;
+        border: 1px solid black;
+        background-color: green;
+        color: white;
+        border-radius: 2px;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+    }
+    .dropdown-content a{
+        background-color: gray;
+        color: burlywood;
+        display: block;
+    }
+   li a:hover{
+    background-color: burlywood;
+    color: black;
+   } 
+   .dropdown .drpbtn:hover{
+    background-color:cadetblue;
+    color: black;
+   }
+   li.dropdown a.drpbtn{
+    background-color: blueviolet;
+   }
+li.dropdown:hover .dropdown-content{
+    display: block;
+}
+ .dropdown-content{
+    margin-top: 10px;
+ }
+</style>
+<body>
+    <div class="main">
+        <ul>
+            <li><a href="https://www.w3schools.com/">Home</a></li>
+            <li><a href="https://www.w3schools.com/">About Us</a></li>
+            <li><a href="https://www.w3schools.com/">ContactUs</a></li>
+            <li class="dropdown"><a href="" class="drpbtn">Tutorials</a>
+                <div class="dropdown-content">
+                    <a href="https://www.w3schools.com/html/default.asp">HTML</a>
+                    <a href="https://www.w3schools.com/css/default.asp">CSS</a>
+                    <a href="https://www.w3schools.com/js/default.asp">JavaScript</a>
+                </div>
+            </li>
+        </ul><a href=""></a>
+    </div>
+</body>
+
+</html>
