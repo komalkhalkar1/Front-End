@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color: purple;
+        border: 1px solid black;
+        margin: 8px;
+        width: 100px;
+        height: 100px;
+        animation-name: abc;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+    @keyframes abc{
+      from{left: 0px;}
+      to{left:1000px;}  
+
+    }
+.div1{
+   animation-timing-function: linear;
+}
+.div2{
+animation-timing-function: ease;
+}
+.div3{
+    animation-timing-function: ease-in;
+}
+.div4{
+    animation-timing-function: ease-out;
+}
+.div5{
+    animation-timing-function: ease-in-out;
+}
+</style>
+<body>
+    <div class="div1">Linear</div>
+
+    <div class="div2">Ease</div>
+    <div class="div3">Ease-in</div>
+    <div class="div4">Ease-out</div>
+    <div class="div5">Ease-in-out</div>
+
+    
+</body>
+</html>
